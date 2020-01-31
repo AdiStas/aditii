@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../../build/fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('../../build/fonts/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../../build/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../../build/fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-family: 'bebas_neueregular', 'open_sansregular', sans-serif;
+
+    color: $grey;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

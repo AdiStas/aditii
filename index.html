@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Aditii</title>
+	<link rel="preload" href="build/fonts/bebasneue-regular-webfont.woff" as="font">
+	<link rel="preload" href="build/fonts/bebasneue-regular-webfont.woff2" as="font">
+	<link rel="preload" href="build/fonts/opensans-regular-webfont.woff" as="font">
+	<link rel="preload" href="build/fonts/opensans-regular-webfont.woff2" as="font">
+	<link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="page-container">
+		<div class="main-header--top">
+			<a class="main-header__logo">
+				<img src="build/img/main-logo.png" width="110" alt="main-logo">
+			</a>
+			<form class="header__search-form" role="search" action="https://echo.htmlacademy.ru" method="post" class="site__search">
+				<label for="search">
+					<input id="search" class="header__search-input" type="search" name="q" aria-label="Search through site content">
+					<button class="header__search-btn" type="submit">
+						<span class="visually-hidden">Search</span>
+					</button>
+				</label>
+			</form>
+			<a class="user-cart" href="#">
+				<img src="build/img/cart.png" width="41" alt="cart-icon">
+				<span class="user-cart__value">$300</span>
+			</a>
+		</div>
+		</div>
+		<div class="main-header--bottom">
+			<div class="page-container">
+			<nav class="main-nav">
+				<ul class="main-nav__list">
+					<li class="nav-list__item">
+						<a href="#">Home</a>
+					</li>
+					<li class="nav-list__item">
+						<a href="#">Sale</a>
+					</li>
+					<li class="nav-list__item">
+						<a href="#">Accessories</a>
+					</li>
+					<li class="nav-list__item">
+						<a href="#">Men's store</a>
+					</li>
+					<li class="nav-list__item">
+						<a href="#">Women's store</a>
+					</li>
+					<li class="nav-list__item">
+						<a href="#">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+			</div>	
+		</div>
+	</header>
+
+	<main>
+		<h1 class="visually-hidden">online-shop Aditii</h1>
+		<section class="hits">
+			<div class="page-container">
+			<h2 class="visually-hidden">Hits</h2>
+				<input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+        		<input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+        		<input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+        		<input class="visually-hidden" type="radio" id="btn-4" name="toggle">
+        		<input class="visually-hidden" type="radio" id="btn-5" name="toggle">
+
+			<div class="slider">
+        		<div class="slider__controls">
+        			<label for="btn-1">Первый</label>
+          			<label for="btn-2">Второй</label>
+          			<label for="btn-3">Третий</label>
+          			<label for="btn-4">Четвертый</label>
+          			<label for="btn-5">Пятый</label>
+        		</div>
+
+        		<ul class="slider__list">
+        			<li class="slider-list__item" id="slide1">
+        				<div class="slide__wrapper">
+        					<div class="item__column--left">
+        						<img class="item__image" src="build/img/white-tee.png" width="278" alt="white-tee">
+        					</div>
+        					<div class="item__column--right">
+        						<h3 class="item__title">Cowhide Standard Crew</h3>
+        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+        						<a href="#" class="item__button">Shop now</a>
+        					</div>
+        				</div>
+        			</li>
+        			<li class="slider-list__item" id="slide2">
+        				<div class="slide__wrapper">
+        					<div class="item__column--left">
+        						<img class="item__image" src="build/img/white-tee.png" width="278" alt="white-tee">
+        					</div>
+        					<div class="item__column--right">
+        						<h3 class="item__title">Cowhide Standard Crew</h3>
+        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+        						<a href="#" class="item__button">Shop now</a>
+        					</div>
+        				</div>
+        			</li>
+        			<li class="slider-list__item" id="slide3">
+        				<div class="slide__wrapper">
+        					<div class="item__column--left">
+        						<img class="item__image" src="build/img/white-tee.png" width="278" alt="white-tee">
+        					</div>
+        					<div class="item__column--right">
+        						<h3 class="item__title">Cowhide Standard Crew</h3>
+        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+        						<a href="#" class="item__button">Shop now</a>
+        					</div>
+        				</div>
+        			</li>
+        			<li class="slider-list__item" id="slide4">
+        				<div class="slide__wrapper">
+        					<div class="item__column--left">
+        						<img class="item__image" src="build/img/white-tee.png" width="278" alt="white-tee">
+        					</div>
+        					<div class="item__column--right">
+        						<h3 class="item__title">Cowhide Standard Crew</h3>
+        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+        						<a href="#" class="item__button">Shop now</a>
+        					</div>
+        				</div>
+        			</li>
+        			<li class="slider-list__item" id="slide5">
+        				<div class="slide__wrapper">
+        					<div class="item__column--left">
+        						<img class="item__image" src="build/img/white-tee.png" width="278" alt="white-tee">
+        					</div>
+        					<div class="item__column--right">
+        						<h3 class="item__title">Cowhide Standard Crew</h3>
+        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+        						<a href="#" class="item__button">Shop now</a>
+        					</div>
+        				</div>
+        			</li>
+        		</ul>
+        	</div>
+        	</div>
+		</section>
+
+		<section class="product-groups">
+			<h2 class="visually-hidden">Product groups carousel</h2>
+			<div class="product-groups__carousel">
+				<button type="button" class="btn-arrow btn-arrow--prev">
+					<span class="visually-hidden">Prev</span>
+				</button>
+				<ul class="product-groups__list">
+					<li class="product-groups__item">
+						<div class="product-item__column--left">
+							<img src="build/img/shoes.png" width="217" alt="shoes-group">
+						</div>
+						<div class="product-item__column--right">
+							<h3 class="product-groups__title">Branded shoes</h3>
+							<a href="#" class="product-groups__buy-btn">Shop</a>
+						</div>
+					</li>
+					<li class="product-groups__item">
+						<div class="product-item__column--left">
+							<img src="build/img/grey-shirt.png" width="132" alt="tshirts-group">
+						</div>
+						<div class="product-item__column--right">
+							<h3 class="product-groups__title">Branded tshirts</h3>
+							<a href="#" class="product-groups__buy-btn">Shop</a>
+						</div>
+					</li>
+					<li class="product-groups__item">
+						<div class="product-item__column--left">
+							<img src="build/img/cargo.png" width="71" alt="cargoes-group">
+						</div>
+						<div class="product-item__column--right">
+							<h3 class="product-groups__title">Branded cargoes</h3>
+							<a href="#" class="product-groups__buy-btn">Shop</a>
+						</div>
+					</li>
+					<li class="product-groups__item">
+						<div class="product-item__column--left">
+							<img src="build/img/grey-shirt.png" width="132" alt="tshirts-group">
+						</div>
+						<div class="product-item__column--right">
+							<h3 class="product-groups__title">Branded tshirts</h3>
+							<a href="#" class="product-groups__buy-btn">Shop</a>
+						</div>
+					</li>
+					<li class="product-groups__item">
+						<div class="product-item__column--left">
+							<img src="build/img/cargo.png" width="71" alt="cargoes-group">
+						</div>
+						<div class="product-item__column--right">
+							<h3 class="product-groups__title">Branded cargoes</h3>
+							<a href="#" class="product-groups__buy-btn">Shop</a>
+						</div>
+					</li>
+					<li class="product-groups__item">
+						<div class="product-item__column--left">
+							<img src="build/img/shoes.png" width="217" alt="shoes-group">
+						</div>
+						<div class="product-item__column--right">
+							<h3 class="product-groups__title">Branded shoes</h3>
+							<a href="#" class="product-groups__buy-btn">Shop</a>
+						</div>
+					</li>
+				</ul>
+				<button type="button" class="btn-arrow btn-arrow--next">
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+
+		<section class="featured-products">
+			<h2 class="section-title">Featured products</h2>
+			<ul class="featured-products__list">
+				<li class="featured-products__item">
+					<img src="build/img/w-shoe.png" width="189" alt="shoe">
+					<h3 class="featured-products__title">Branded shoe</h3>
+					<span class="featured-products__price">$300</span>
+					<a class="featured-products__buy-btn" href="#">Buy now</a>
+				</li>
+				<li class="featured-products__item">
+					<img src="build/img/black-tee.png" width="116" alt="tees">
+					<h3 class="featured-products__title">Branded tees</h3>
+					<span class="featured-products__price">$300</span>
+					<a class="featured-products__buy-btn" href="#">Buy now</a>
+				</li>
+				<li class="featured-products__item">
+					<img src="build/img/grey-tee.png" width="105" alt="tees">
+					<h3 class="featured-products__title">Branded tees</h3>
+					<span class="featured-products__price">$300</span>
+					<a class="featured-products__buy-btn" href="#">Buy now</a>
+				</li>
+				<li class="featured-products__item">
+					<img src="build/img/wallet.png" width="175" alt="wallet">
+					<h3 class="featured-products__title">Branded wallets</h3>
+					<span class="featured-products__price">$300</span>
+					<a class="featured-products__buy-btn" href="#">Buy now</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<section class="main-footer">
+			<h2 class="visually-hidden">More links</h2>
+			<ul class="footer__list">
+				<li class="footer-list__item">
+					<h3 class="inner-list__title">Featured sale</h3>
+					<ul class="footer__inner-list">
+						<li>Lorem ipsum</li>
+						<li>Ducimus accusantium</li>
+						<li>Assumenda animi</li>
+						<li>Illum</li>
+						<li>Iste adipisci</li>
+						<li>Odit mollitia</li>
+						<li>Officia</li>
+						<li>Obcaecati at laudantium</li>
+					</ul>
+				</li>
+				<li class="footer-list__item">
+					<h3 class="inner-list__title">Mens store</h3>
+					<ul class="footer__inner-list">
+						<li>Voluptatum asperiores</li>
+						<li>Ducimus accusantium</li>
+						<li>Tenetur</li>
+						<li>Illum</li>
+						<li>Iste adipisci</li>
+						<li>Quisquam</li>
+						<li>Odit mollitia</li>
+						<li>Officia</li>
+					</ul>
+				</li>
+				<li class="footer-list__item">
+					<h3 class="inner-list__title">Womens store</h3>
+					<ul class="footer__inner-list">
+						<li>Voluptatum asperiores</li>
+						<li>Tenetur</li>
+						<li>Vero, molestias, accusamus</li>
+						<li>Odit mollitia</li>
+						<li>Quae ratione</li>
+						<li>Officia</li>
+						<li>Non odit voluptatum</li>
+						<li>Iste adipisci</li>
+					</ul>
+				</li>
+				<li class="footer-list__item">
+					<h3 class="inner-list__title">Quick links</h3>
+					<ul class="footer__inner-list">
+						<li>Iste adipisci</li>
+						<li>Odit mollitia</li>
+						<li>Officia</li>
+						<li>Obcaecati at laudantium</li>
+						<li>Lorem ipsum</li>
+						<li>Ducimus accusantium</li>
+						<li>Assumenda animi</li>
+						<li>Illum</li>
+					</ul>
+				</li>
+			</ul>
+		</section>	
+	</footer>
+
+</body>
+</html>
