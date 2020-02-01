@@ -1,28 +1,36 @@
 .main-header {
-	margin: 0 auto;
+	margin: 0;
 }
 
 .main-header--top {
-	margin: 0 128px;
-	padding: 20px 20px 15px 25px;
+	margin: 0;
+	margin-bottom: 45px;
+	padding: 10px;
 
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
 
+.main-header__logo img {
+	width: 80px;
+	order: 1;
+}
+
 .header__search-form {
 	position: relative;
-	flex-basis: 44%;
+	flex-basis: 100%;
+	order: 3;
 }
 
 .header__search-input {
-	padding: 5px 40px 5px 10px;
 	width: 100%;
+	padding: 5px 40px 8px 10px;
 	box-sizing: border-box;
 
 	font-family: 'open_sansregular', sans-serif;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 18px;
 	color: $grey;
 
@@ -71,17 +79,21 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .user-cart {
+	order: 2;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
-	flex-basis: 110px;
 
 	color: $grey;
 	text-shadow: 1px -20px 20px transparent;
 	text-decoration: none;
 
 	transition: all .6s;
+
+	& img {
+		width: 25px;
+		margin-right: 10px;
+	}
 
 	&:hover,
 	&:focus {
@@ -93,22 +105,45 @@ input[type="search"]::-webkit-search-results-decoration {
 			animation: pendulum 2s ease-out;
 		}
 	}
+
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 .user-cart__value {
-	font-size: 33px;
-	line-height: 35px;
+	font-size: 26px;
+	line-height: 30px;
 }
 
 .main-header--bottom {
+	position: relative;
 	background-color: $lightGreen;
+}
+
+.main-nav__toggle {
+	position: absolute;
+	top: -45px;
+	right: 0;
+
+	padding: 0;
+	width: 100%;
+	height: 45px;
+
+	border: none;
+	border-bottom: 2px solid #fff;
+	background-color: $darkGreen;
+	outline: none;
+}
+
+.main-nav__toggle-text {
+	color: #fff;
 }
 
 .main-nav__list {
 	@include list-reset;
 
-	display: flex;
-	justify-content: center;
+	text-align: center;
 }
 
 .nav-list__item {
@@ -120,25 +155,29 @@ input[type="search"]::-webkit-search-results-decoration {
 			text-shadow: 0px 0px 0px #fff;
 		}
 
+	&:active {
+		opacity: 0.3;
+	}
+
 	&:not(:first-child)::before {
 		content: '';
 
 		position: absolute;
-		top: 50%;
-		left: 0;
+		top: 0;
+		left: 50%;
 
-		transform: translateY(-50%);
+		transform: translateX(-50%);
 
-		width: 2px;
-		height: 1em;
+		width: 50px;
+		height: 2px;
 
-		background-color: #fff;
+		background-color: $darkGreen;
 	}
 
 	& a {
 		display: block;
 
-		padding: 5px 20px;
+		padding: 10px 20px;
 		margin: 0 10px;
 		font-size: 21px;
 		line-height: 23px;
@@ -149,6 +188,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 		transition: all .5s;
 	}
+}
+
+.main-nav--closed .nav-list__item {
+	display: none;
 }
 
 @keyframes pendulum {

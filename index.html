@@ -32,9 +32,10 @@
 		</div>
 		<div class="main-header--bottom">
 			<div class="page-container">
-			<nav class="main-nav">
+			<nav class="main-nav main-nav--closed">
+				<button class="main-nav__toggle" type="button"><span class="main-nav__toggle-text">Menu</span></button>
 				<ul class="main-nav__list">
-					<li class="nav-list__item">
+					<li class="nav-list__item nav-list__item--active">
 						<a href="#">Home</a>
 					</li>
 					<li class="nav-list__item">
@@ -98,7 +99,7 @@
         					</div>
         					<div class="item__column--right">
         						<h3 class="item__title">Cowhide Standard Crew</h3>
-        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit..</p>
         						<a href="#" class="item__button">Shop now</a>
         					</div>
         				</div>
@@ -144,7 +145,7 @@
         	</div>
 		</section>
 
-		<section class="product-groups">
+		<!-- <section class="product-groups">
 			<h2 class="visually-hidden">Product groups carousel</h2>
 			<div class="product-groups__carousel">
 				<button type="button" class="btn-arrow btn-arrow--prev">
@@ -210,10 +211,10 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="featured-products">
-			<h2 class="section-title">Featured products</h2>
+			<h2 class="featured-products__head">Featured products</h2>
 			<ul class="featured-products__list">
 				<li class="featured-products__item">
 					<img src="build/img/w-shoe.png" width="189" alt="shoe">
@@ -236,6 +237,18 @@
 				<li class="featured-products__item">
 					<img src="build/img/wallet.png" width="175" alt="wallet">
 					<h3 class="featured-products__title">Branded wallets</h3>
+					<span class="featured-products__price">$300</span>
+					<a class="featured-products__buy-btn" href="#">Buy now</a>
+				</li>
+				<li class="featured-products__item">
+					<img src="build/img/bag.png" width="140" alt="Women Bag">
+					<h3 class="featured-products__title">EMS Women Bag</h3>
+					<span class="featured-products__price">$300</span>
+					<a class="featured-products__buy-btn" href="#">Buy now</a>
+				</li>
+				<li class="featured-products__item">
+					<img src="build/img/cargo.png" width="71" alt="wallet">
+					<h3 class="featured-products__title">Branded Cargoes</h3>
 					<span class="featured-products__price">$300</span>
 					<a class="featured-products__buy-btn" href="#">Buy now</a>
 				</li>
@@ -302,6 +315,8 @@
 			</ul>
 		</section>	
 	</footer>
+
+<script src="build/js/menu.js"></script>
 
 </body>
 </html>
