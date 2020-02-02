@@ -60,14 +60,6 @@
 
 .item__description {
 	display: none;
-	margin: 0;
-	margin-bottom: 25px;
-
-	font-family: 'open_sansregular', sans-serif;
-	font-size: 14px;
-	line-height: 16px;
-
-	color: #fff;
 }
 
 .item__button {
@@ -120,4 +112,9 @@
 	background-color: #fff;
 
 	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.3);
+	}
 }

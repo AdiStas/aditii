@@ -25,6 +25,9 @@
 }
 
 .header__search-input {
+	-webkit-appearance: none;
+	outline-offset: 0;
+
 	width: 100%;
 	padding: 5px 40px 8px 10px;
 	box-sizing: border-box;
@@ -134,6 +137,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	border-bottom: 2px solid #fff;
 	background-color: $darkGreen;
 	outline: none;
+	cursor: pointer;
 }
 
 .main-nav__toggle-text {
