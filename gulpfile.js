@@ -36,7 +36,8 @@ gulp.task('copy', function() {
 		// './src/fonts/**/*.{woff,woff2}',
 		// './src/img/**',
 		// './src/js/**',
-		'./src/css/style.min.css'
+		'./src/css/style.min.css',
+		'./src/css/style.css',
 		], {
 			base: './src'
 		})

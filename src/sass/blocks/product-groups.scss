@@ -1,4 +1,4 @@
-.product-groups {
+.product-groups__carousel {
 	position: relative;
 }
 
@@ -13,6 +13,7 @@
 	background-color: transparent;
 	outline: none;	
 	cursor: pointer;
+	z-index: 20;
 
 	&::before,
 	&::after {
@@ -26,7 +27,6 @@
 		background-color: $grey;
 		opacity: 0.3;
 		transition: .4s;
-		z-index: 10;
 	}
 
 	&::before {
@@ -74,7 +74,7 @@
 }
 
 .product-groups__item {
-	min-width: 320px;
+	min-width: 100%;
 	display: flex;
 	align-items: center;
 }
@@ -107,7 +107,71 @@
 
 	color: #fff;
 	text-decoration: none;
+	border: 2px solid transparent;
 	border-radius: 3px;
 	background-color: $buttonGreen;
+	transition: all .4s;
+
+	&:hover,
+	&:focus {
+		color: $buttonGreen;
+		background-color: #fff;
+		border: 2px solid $buttonGreen;
+	}
 }
 
+@media (min-width: $tablet-width) {
+	.product-groups__list {
+		padding: 30px;
+	}
+
+	.product-groups__item {
+		position: relative;
+		min-width: 50%;
+
+		&:nth-of-type(even)::before {
+			content: '';
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			height: 100%;
+			width: 1px;
+
+			background-color: rgb(243,243,243);
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.product-groups__list {
+		padding: 20px;
+	}
+
+	.product-groups__item {
+		position: relative;
+		min-width: 33%;
+
+		&:not(:first-child)::before {
+			content: '';
+
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			height: 100%;
+			width: 1px;
+
+			background-color: rgb(243,243,243);
+		}
+
+		&:nth-child(4n+4)::before {
+			display: none;
+		}
+	}
+
+	.product-groups__title {
+		padding-right: 20px;
+	}
+}

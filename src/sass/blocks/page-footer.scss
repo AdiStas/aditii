@@ -50,3 +50,48 @@
 		cursor: pointer;
 	}
 }
+
+@media (min-width: $tablet-width) {
+	.page-footer {
+		padding-bottom: 70px;	
+	}
+
+	.footer__list {
+		margin: 0 30px;
+		flex-wrap: nowrap;
+	}
+
+	.footer-list__item {
+		flex-basis: 25%;
+		padding-left: 20px;
+		text-align: left;
+	}
+
+	.inner-list__title {
+		font-size: 27px;
+		line-height: 29px;
+		font-weight: 300;
+	}
+
+	.footer__inner-list {
+		font-size: 15px;
+		line-height: 28px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.footer__list {
+		margin: 0 128px;
+		padding: 35px 60px 15px;
+		justify-content: space-between;
+	}
+
+	.footer-list__item {
+		padding-left: 0;
+	}
+
+	.inner-list__title {
+		margin: 0;
+		margin-bottom: 15px;
+	}
+}

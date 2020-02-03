@@ -7,7 +7,7 @@
 	<link rel="preload" href="build/fonts/bebasneue-regular-webfont.woff2" as="font">
 	<link rel="preload" href="build/fonts/opensans-regular-webfont.woff" as="font">
 	<link rel="preload" href="build/fonts/opensans-regular-webfont.woff2" as="font">
-	<link rel="stylesheet" href="src/css/style.css">
+	<link rel="stylesheet" href="build/css/style.min.css">
 </head>
 <body>
 	<header class="main-header">
@@ -98,8 +98,8 @@
         						<img class="item__image" src="build/img/white-tee.png" width="278" alt="white-tee">
         					</div>
         					<div class="item__column--right">
-        						<h3 class="item__title">2Cowhide Standard Crew</h3>
-        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit..</p>
+        						<h3 class="item__title">Standard Shirt</h3>
+        						<p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, corporis illum.</p>
         						<a href="#" class="item__button">Shop now</a>
         					</div>
         				</div>
@@ -110,8 +110,8 @@
         						<img class="item__image" src="build/img/white-tee.png" width="278" alt="white-tee">
         					</div>
         					<div class="item__column--right">
-        						<h3 class="item__title">Cowhide Standard Crew</h3>
-        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+        						<h3 class="item__title">Possimus assumenda accusantium ab!</h3>
+        						<p class="item__description">Dolorum assumenda inventore ab tempora fugiat suscipit sunt laboriosam reiciendis distinctio dignissimos temporibus voluptate, asperiores?</p>
         						<a href="#" class="item__button">Shop now</a>
         					</div>
         				</div>
@@ -122,8 +122,8 @@
         						<img class="item__image" src="build/img/white-tee.png" width="278" alt="white-tee">
         					</div>
         					<div class="item__column--right">
-        						<h3 class="item__title">Cowhide Standard Crew</h3>
-        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+        						<h3 class="item__title">Tempora dolore</h3>
+        						<p class="item__description">Nihil tempora a quos facere, doloremque maxime, rerum molestiae tempore! Laudantium voluptate velit minima</p>
         						<a href="#" class="item__button">Shop now</a>
         					</div>
         				</div>
@@ -134,8 +134,8 @@
         						<img class="item__image" src="build/img/white-tee.png" width="278" alt="white-tee">
         					</div>
         					<div class="item__column--right">
-        						<h3 class="item__title">Cowhide Standard Crew</h3>
-        						<p class="item__description">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit.</p>
+        						<h3 class="item__title">Crew Standard</h3>
+        						<p class="item__description">Est velit non, cupiditate natus cumque reiciendis corporis facilis id perspiciatis laboriosam, nesciunt rem voluptas sint libero tenetur accusantium.</p>
         						<a href="#" class="item__button">Shop now</a>
         					</div>
         				</div>
@@ -147,6 +147,7 @@
 
 		<section class="product-groups">
 			<h2 class="visually-hidden">Product groups carousel</h2>
+			<div class="page-container">
 			<div class="product-groups__carousel">
 				<button type="button" class="btn-arrow btn-arrow--prev">
 					<span class="visually-hidden">Prev</span>
@@ -211,54 +212,74 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
+			</div>
 		</section>
 
 		<section class="featured-products">
-			<h2 class="featured-products__head">Featured products</h2>
-			<ul class="featured-products__list">
+			<div class="featured-products__head-wrapper">
+				<div class="page-container">
+					<h2 class="featured-products__head">Featured products</h2>
+				</div>
+			</div>
+			<div class="page-container">
+				<ul class="featured-products__list">
 				<li class="featured-products__item">
 					<img src="build/img/w-shoe.png" width="189" alt="shoe">
-					<h3 class="featured-products__title">Branded shoe</h3>
-					<span class="featured-products__price">$300</span>
-					<a class="featured-products__buy-btn" href="#">Buy now</a>
+					<div class="featured-products__text-wrapper">
+						<h3 class="featured-products__title">Branded shoe</h3>
+						<span class="featured-products__price">$300</span>
+						<a class="featured-products__buy-btn" href="#">Buy now</a>
+					</div>
 				</li>
 				<li class="featured-products__item">
 					<img src="build/img/black-tee.png" width="116" alt="tees">
-					<h3 class="featured-products__title">Branded tees</h3>
-					<span class="featured-products__price">$300</span>
-					<a class="featured-products__buy-btn" href="#">Buy now</a>
+					<div class="featured-products__text-wrapper">
+						<h3 class="featured-products__title">Branded tees</h3>
+						<span class="featured-products__price">$300</span>
+						<a class="featured-products__buy-btn" href="#">Buy now</a>
+					</div>
 				</li>
 				<li class="featured-products__item">
 					<img src="build/img/grey-tee.png" width="105" alt="tees">
-					<h3 class="featured-products__title">Branded tees</h3>
-					<span class="featured-products__price">$300</span>
-					<a class="featured-products__buy-btn" href="#">Buy now</a>
+					<div class="featured-products__text-wrapper">
+						<h3 class="featured-products__title">Branded tees</h3>
+						<span class="featured-products__price">$300</span>
+						<a class="featured-products__buy-btn" href="#">Buy now</a>
+					</div>
 				</li>
 				<li class="featured-products__item">
 					<img src="build/img/wallet.png" width="175" alt="wallet">
-					<h3 class="featured-products__title">Branded wallets</h3>
-					<span class="featured-products__price">$300</span>
-					<a class="featured-products__buy-btn" href="#">Buy now</a>
+					<div class="featured-products__text-wrapper">
+						<h3 class="featured-products__title">Branded wallets</h3>
+						<span class="featured-products__price">$300</span>
+						<a class="featured-products__buy-btn" href="#">Buy now</a>
+					</div>	
 				</li>
 				<li class="featured-products__item">
 					<img src="build/img/bag.png" width="140" alt="Women Bag">
-					<h3 class="featured-products__title">EMS Women Bag</h3>
-					<span class="featured-products__price">$300</span>
-					<a class="featured-products__buy-btn" href="#">Buy now</a>
+					<div class="featured-products__text-wrapper">
+						<h3 class="featured-products__title">EMS Women Bag</h3>
+						<span class="featured-products__price">$300</span>
+						<a class="featured-products__buy-btn" href="#">Buy now</a>
+					</div>	
 				</li>
 				<li class="featured-products__item">
 					<img src="build/img/cargo.png" width="71" alt="wallet">
-					<h3 class="featured-products__title">Branded Cargoes</h3>
-					<span class="featured-products__price">$300</span>
-					<a class="featured-products__buy-btn" href="#">Buy now</a>
+					<div class="featured-products__text-wrapper">
+						<h3 class="featured-products__title">Branded Cargoes</h3>
+						<span class="featured-products__price">$300</span>
+						<a class="featured-products__buy-btn" href="#">Buy now</a>
+					</div>	
 				</li>
-			</ul>
+				</ul>
+			</div>
 		</section>
 	</main>
 
 	<footer class="page-footer">
 		<section class="main-footer">
 			<h2 class="visually-hidden">More links</h2>
+			<div class="page-container">
 			<ul class="footer__list">
 				<li class="footer-list__item">
 					<h3 class="inner-list__title">Featured sale</h3>
@@ -313,6 +334,7 @@
 					</ul>
 				</li>
 			</ul>
+			</div>
 		</section>	
 	</footer>
 

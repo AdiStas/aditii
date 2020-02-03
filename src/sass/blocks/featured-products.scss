@@ -1,5 +1,5 @@
-.featured-products {
-		
+.featured-products__head-wrapper {
+	background-color: $darkGreen;
 }
 
 .featured-products__head {
@@ -7,7 +7,6 @@
 	margin-bottom: 20px;
 	padding: 10px;
 
-	background-color: $darkGreen;
 	color: #fff;
 
 	font-weight: 300;
@@ -18,22 +17,35 @@
 .featured-products__list {
 	@include list-reset;
 	margin: 0 10px;
+
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
+}
+
+@media (min-width: 540px) and (max-width: 660px) {
+	.featured-products__list {
+		justify-content: space-between;
+	}
 }
 
 .featured-products__item {
 	position: relative;
+	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 
 	width: 253px;
-	margin: 0 auto;
 	margin-bottom: 20px;
 	padding: 20px 0;
-	
-	text-align: center;
+	padding-bottom: 30px;
 
 	border: 2px solid #f3f3f3;
+
+	& img {
+		margin: 0 auto;
+	}
 	
 	&::before {
 		content: "";
@@ -48,10 +60,13 @@
 	}
 }
 
-.featured-products__title {
-	margin: 0;
-	margin-bottom: 10px;
+.featured-products__text-wrapper {
+	flex-basis: 100%;
+	text-align: center;
+}
 
+.featured-products__title {
+	margin: 10px 0;
 	font-weight: 300;
 	font-size: 27px;
 	line-height: 29px;
@@ -60,12 +75,12 @@
 .featured-products__price {
 	font-size: 27px;
 	line-height: 29px;
+	margin-right: 15px;
 }
 
 .featured-products__buy-btn {
 	display: inline-block;
 	padding: 5px 10px;
-	margin-left: 5px;
 	vertical-align: bottom;
 	
 	border-radius: 3px;
@@ -82,5 +97,38 @@
 	&:focus {
 		text-shadow: 0px 0px 0px #fff, 0px -20px 0px transparent;
 		color: transparent;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.featured-products__head {
+		margin-bottom: 30px;
+		padding: 10px 30px;
+	}
+
+	.featured-products__list {
+		margin: 0 30px;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.featured-products {
+		margin-bottom: 25px;
+	}
+
+	.featured-products__head {
+		margin: 0 128px;
+		margin-bottom: 45px;
+		padding: 20px 57px 15px;
+	}
+
+	.featured-products__list {
+		margin: 0 128px;
+		padding: 0 57px;
+	}
+
+	.featured-products__item {
+		margin-bottom: 45px;
 	}
 }
