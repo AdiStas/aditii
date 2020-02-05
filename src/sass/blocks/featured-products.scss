@@ -25,7 +25,7 @@
 
 @media (min-width: 540px) and (max-width: 660px) {
 	.featured-products__list {
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 }
 
@@ -107,8 +107,10 @@
 	}
 
 	.featured-products__list {
-		margin: 0 30px;
-		justify-content: space-between;
+		max-width: 910px;
+		padding: 0 30px;
+		margin: 0 auto;
+		justify-content: space-around;
 	}
 }
 

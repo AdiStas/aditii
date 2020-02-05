@@ -911,8 +911,7 @@ input[type="radio"] {
 
 @media (min-width: 540px) and (max-width: 660px) {
   .featured-products__list {
-    -webkit-box-pack: justify;
-            justify-content: space-between; } }
+    justify-content: space-around; } }
 
 .featured-products__item {
   position: relative;
@@ -974,9 +973,10 @@ input[type="radio"] {
     margin-bottom: 30px;
     padding: 10px 30px; }
   .featured-products__list {
-    margin: 0 30px;
-    -webkit-box-pack: justify;
-            justify-content: space-between; } }
+    max-width: 910px;
+    padding: 0 30px;
+    margin: 0 auto;
+    justify-content: space-around; } }
 
 @media (min-width: 1280px) {
   .featured-products {
