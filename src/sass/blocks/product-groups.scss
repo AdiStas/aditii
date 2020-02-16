@@ -1,10 +1,12 @@
-.product-groups__carousel {
-	position: relative;
+.product-groups__list {
+	@include list-reset;
+	padding: 10px 0;
+	left: 0;
 
-	overflow: hidden;
+	transition: all ease 1s;
 }
 
-.btn-arrow {
+.slick-arrow {
 	position: absolute;
 	top: 0;
 
@@ -13,6 +15,7 @@
 
 	border: none;
 	background-color: transparent;
+	transform: translate(0);
 	outline: none;	
 	cursor: pointer;
 	z-index: 20;
@@ -58,27 +61,21 @@
 	}
 }
 
-.btn-arrow--prev {
+.slick-prev {
 	left: 0;
 }
 
-.btn-arrow--next {
+.slick-next {
 	right: 0;
 	transform: rotate(180deg);
 }
 
-.product-groups__list {
-	position: relative;
-	@include list-reset;
-	padding: 10px 0;
-	left: 0;
-
+.slick-initialized .slick-slide {
 	display: flex;
-	transition: all ease 1s;
+	align-items: center;
 }
 
-.product-groups__item {
-	min-width: 100%;
+.slick-track {
 	display: flex;
 	align-items: center;
 }
@@ -126,51 +123,11 @@
 
 @media (min-width: $tablet-width) {
 	.product-groups__list {
-		padding: 30px 0;
-	}
-
-	.product-groups__item {
-		position: relative;
-		min-width: 50%;
-
-		&:nth-of-type(even)::before {
-			content: '';
-
-			position: absolute;
-			top: 0;
-			left: 0;
-
-			height: 100%;
-			width: 1px;
-
-			background-color: rgb(243,243,243);
-		}
+		padding: 20px 0;
 	}
 }
 
 @media (min-width: $desktop-width) {
-	.product-groups__list {
-		padding: 20px 0;
-	}
-
-	.product-groups__item {
-		position: relative;
-		min-width: 33%;
-
-		&:not(:first-child)::before {
-			content: '';
-
-			position: absolute;
-			top: 0;
-			left: 0;
-
-			height: 100%;
-			width: 1px;
-
-			background-color: rgb(243,243,243);
-		}
-	}
-
 	.product-groups__title {
 		padding-right: 20px;
 	}
